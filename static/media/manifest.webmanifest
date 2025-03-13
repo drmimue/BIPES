@@ -1,0 +1,38 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "BIPES",
+    "short_name": "BIPES",
+    "scope": "../../",
+    "display": "standalone",
+    "start_url": "../../ide",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "description": "Block based Integrated Platform for Embedded Systems",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icon/icon-maskable-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icon/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icon/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+  ],
+    "url": "../../",
+    "screenshots": []
+}
+

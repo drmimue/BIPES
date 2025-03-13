@@ -1,0 +1,82 @@
+<!doctype html>
+<html  lang='fr'>
+<head>
+  <title>BIPES</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" sizes="192x192" href="./static/media/icon/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/media/icon/apple-touch-icon.png">
+  <link rel="manifest" href="static/media/manifest.webmanifest">
+  <meta name="theme-color" content="#fff">
+  <script>
+    if ('serviceWorker' in navigator)
+	navigator.serviceWorker.register('serviceworker.js', {scope: '../'})
+  </script>
+  <link rel="stylesheet" href='./static/style.css'/>
+  <script type="text/javascript" src="./static/libs/shortcuts.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/codemirror.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/muuri.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/paho-mqtt.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/chart.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/xterm.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/blockly.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/chart-adapter-date-fns.bundle.umd.js"></script>
+  <script type="text/javascript" src="./static/libs/dash.umd.js"></script>
+  
+  <script type="text/javascript" src="./static/page/blocks/blocks.umd.js"></script>
+  <script type="text/javascript" src="./static/page/blocks/pythonic.umd.js"></script>
+  <script type="text/javascript" src="./static/page/blocks/toolbox.umd.js"></script>
+  
+  <script type="text/javascript" src="./static/msg/fr.js"></script>
+  <script type="text/javascript" src="./static/page/blocks/msg/fr.js"></script>
+  
+</head>
+
+
+<body>
+
+<nav>
+<div id="panels">
+  <span id="menu">BIPES</span>
+<a id="blocks" href="./ide.html?page=blocks"></a>
+
+<a id="dashboard" href="./ide.html?page=dashboard"></a>
+
+<a id="device" href="./ide.html?page=device"></a>
+
+<a id="prompt" href="./ide.html?page=prompt"></a>
+
+<a id="files" href="./ide.html?page=files"></a>
+
+<a id="notification" href="./ide.html?page=notification"></a>
+
+<a id="project" href="./ide.html?page=project"></a>
+
+
+</div>
+<div id="extra">
+  <div id="app-version">Version 3.0.13</div>
+</div>
+</nav>
+
+<section id="blocks"></section>
+<section id="dashboard"></section>
+<section id="device"></section>
+<section id="prompt"></section>
+<section id="files"></section>
+<section id="notification"></section>
+<section id="project"></section>
+
+
+<div id='status-bar'>
+  <div id='extra'></div>
+  <div id='globals'></div>
+</div>
+
+<script type="text/javascript" src="./static/libs/bipes.umd.js"></script>
+<script>
+  Bipes()
+</script>
+
+
+</body>
+</html>
